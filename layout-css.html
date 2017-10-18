@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+
+     <head>
+
+
+
+	<style type="text/css">
+		body{
+			margin:0px;
+		}
+
+		#container{
+
+		width:800px;
+		border:0px solid black;
+		margin:auto;
+		}
+
+		#header,#footer{
+
+			background-color:rgb(0,73,64);
+			color:white;
+			text-align:center;
+		}
+
+		#header{
+			padding:10px;
+			font-size:30px;
+			text-align:center;
+
+		}
+		#footer{
+				
+			clear:both;
+			padding-top:10px;
+			padding-bottom:5px;
+			font-size:18px;
+		}
+
+		#menu{
+
+			height:590px;
+			background-color:#ddd;
+			font-size:18px;
+			color:black;
+			width:20%;
+			float:left;
+		}
+
+		#content{
+	
+			background-color:PaleGoldenRod;
+			width:60%;
+			float:left;
+			color:black;
+			font-size:18px;	
+			padding-top:10px;
+			padding-bottom:10px;
+			}
+		
+		#ad{
+			height:590px;	
+			background-color:LightCyan ;
+			width:20%;
+			float:left;
+
+		}
+		
+		div .inside_menu{
+
+			padding:10px;
+			border-top:1px solid black;
+			border-bottom:1px solid black;		
+		}
+
+		div .inside_menu:hover{
+		
+			background-color:#f7f7f7;
+			color:#590d0d;	
+		}
+		.text_content{
+		
+			text-indent:15px;
+			margin-left:5px;
+			margin-right:5px;
+		}
+	</style>
+
+
+	<meta charset ="UTF-8">
+
+	<title>Tạo layout trong CSS</title>
+
+     </head>
+
+
+
+
+     <body>
+	<div id="container">
+		<div id="header">
+			<div>WEB CƠ BẢN. VN</div>
+			<div style="font-size:20px;">
+			    Hướng dẫn học lập trình web từ cơ bản đến nâng cao
+
+			</div>
+		</div>
+		<div id="menu">
+
+			<div class="inside_menu">
+
+
+				Học HTML
+
+
+			</div>
+ 
+			<div class="inside_menu">
+
+				Học CSS
+
+			</div>
+
+			<div class="inside_menu">
+
+				Học JavaScript 
+
+			</div>
+
+			<div class="inside_menu">
+
+				Học PHP 
+
+			</div>
+	
+			<div class="inside_menu">
+
+				Học MySQL 
+			
+			</div>
+
+			<div class="inside_menu">
+
+			Học Codeigniter 
+
+
+			</div>
+
+		</div>
+		<div id="content">
+
+			<h3 align="center">TẤT CẢ NGÔN NGỮ</h3>
+			<div class="baiviet_child">
+
+				<div style="font-size:22px;text-indent:50px;padding:10px;">
+
+				Thuộc tính Float trong CSS	
+		
+				</div>
+
+				<div class="text_content" align="justify">
+
+				Thuộc tính float có tác dụng đẩy phần tử sang bên trái hoặc bên phải. Nó thường được áp dụng vào việc thiết kế bố cục của trang web (Layout). Ở Layout phía trên, phần nằm giữa gồm ba khối: menu, nội dung, quảng cáo. Thông thường, các phần tử khối sẽ bắt đầu trên một hàng mới. Nhưng ở đây, cả ba phần tử khối có thể nằm trên cùng một hàng đó là nhờ vào thuộc tính float. Trước tiên, ta thiết lập khối menu chiều rộng 30% và đẩy nó sang trái. (Xem ví dụ). Tiếp theo, ta thiết lập khối nội dung chiều rộng 50% và đẩy nó sang trái (Nếu một phần tử được đẩy sang trái thì nó sẽ nối đuôi phần tử đứng trước nó). Do đó, khối nội dung sẽ được nằm cạnh khối menu.
+
+				</div>
+
+			</div>
+
+			<div class="baiviet_child">
+	
+			
+				<div style="font-size:22px;text-indent:50px;padding:10px">
+
+				Thuộc tính Float trong CSS	
+		
+				</div>
+
+				<div class="text_content" align="justify">
+
+				Thuộc tính float có tác dụng đẩy phần tử sang bên trái hoặc bên phải. Nó thường được áp dụng vào việc thiết kế bố cục của trang web (Layout). Ở Layout phía trên, phần nằm giữa gồm ba khối: menu, nội dung, quảng cáo. Thông thường, các phần tử khối sẽ bắt đầu trên một hàng mới. Nhưng ở đây, cả ba phần tử khối có thể nằm trên cùng một hàng đó là nhờ vào thuộc tính float. Trước tiên, ta thiết lập khối menu chiều rộng 30% và đẩy nó sang trái. (Xem ví dụ). Tiếp theo, ta thiết lập khối nội dung chiều rộng 50% và đẩy nó sang trái (Nếu một phần tử được đẩy sang trái thì nó sẽ nối đuôi phần tử đứng trước nó). Do đó, khối nội dung sẽ được nằm cạnh khối menu.
+
+				</div>
+
+			</div>
+
+
+		</div>
+		<div id="ad">Phần quảng cáo</div>
+		<div id="footer">&copy;2016 Web cơ bản All Right Reserved</div>
+
+	</div>    
+     </body>
+
+
+</html>

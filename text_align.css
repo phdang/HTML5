@@ -1,0 +1,25 @@
+#left{
+
+	text-align:left;
+	font-family:Courier;
+	color:green;
+	font-size:25px;
+	border:1px solid black;
+}
+
+#center{
+
+	text-align:center;
+	color:white;
+	font-size:50px;
+	background-color:black;
+}
+
+#right{
+
+	text-align:right;
+	color:red;
+	background-color:grey;
+	font-size:30px;
+	
+}

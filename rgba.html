@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+     <head>
+
+
+
+	<style type="text/css">
+
+	div{
+
+		width:300px;
+		padding: 15px;
+		margin-bottom:20px; 
+		font-size:22px;
+
+	}
+
+	div > p {
+
+		height: 30px;
+		background-color:red
+	
+	}
+
+	.father_1{
+
+		background: rgb(0,126,0);
+		opacity:0.5;
+	
+	}
+
+	.father_2{
+
+		background: rgba(0,126,0,0.5);
+
+	}
+
+
+
+
+
+	</style>
+
+
+	<meta charset ="UTF-8">
+
+	<title>Sử dụng rbga               </title>
+
+
+     </head>
+
+
+
+
+     <body>
+
+
+	<p>
+		<b>
+			Dưới đây là ví dụ về phần tử được thiết lập độ trong suốt bằng thuộc tính opacity (Chúng ta thấy phần tử con sẽ bị ảnh hưởng bởi độ trong suốt của phần tử cha)
+
+		</b>
+
+	</p>
+
+
+    
+	<div class = "father_1">
+	
+		<p> </p>
+
+	</div>
+
+    
+	<div class = "father_1">Hello CSS</div> 
+     
+	<p>
+		<b>
+		
+	Dưới đây và ví dụ về phần tử được thiết lập độ trong suốt bằng mã màu rgba (Chúng ta thấy phần tử con KHÔNG bị ảnh hưởng bởi độ trong suốt của phần tử cha)
+
+		</b>
+
+	</p>
+
+	<div class = "father_2">
+	
+		<p> </p>
+
+	</div>
+
+    
+	<div class = "father_2">Hello CSS</div> 
+
+  
+  </body>
+
+
+</html>
+

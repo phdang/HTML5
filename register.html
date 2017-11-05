@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+
+     <head>
+
+
+
+	<style type="text/css">
+
+	table {
+		
+		font-size:16px;
+
+		font-family: Courier;
+
+	     }
+	
+	caption {
+
+		margin-top:10px;
+		margin-bottom: 10px;
+
+	</style>
+
+
+	<meta charset ="UTF-8">
+
+	<title>Tạo bảng đăng kí </title>
+
+
+     </head>
+
+
+
+
+     <body>
+
+
+
+
+	<script>
+
+
+
+
+
+
+
+
+    
+
+	</script>
+  
+
+  
+
+     </body>
+
+		<form action = "analysis.html" method = "post">
+
+			<table widtd="800px" cellpadding ="5px">
+
+				<caption> <strong> Đăng kí thành viên </strong></caption>
+			
+				<tr>
+		
+					<td width= "40%"><label for ="user">Tên đăng nhập</label></td>
+
+					<td>
+						<input type = "text" name = "user" id = "user" placeholder ="Tên của bạn" required >
+					</td>
+
+				</tr>
+
+				<tr>
+
+				<tr>
+
+					<td><label for ="email">Email</label></th>
+					
+			
+					<td><input type= = "email" name = "email" id ="email" placeholder = "Nhập địa chỉ email của bạn" >
+					
+					</td>
+		
+					</tr>
+		
+					<td><label for = "pass">Mật khẩu</label></td>
+
+					<td> <input type = "password" name = "pass" id = "pass" placeholder = "Mật khẩu" required> 
+						
+					</td>
+
+				</tr>
+		
+				<tr>
+		
+					<td><label for ="retypepass">Nhập lại mật khẩu</label></td>
+
+					<td> <input type = "password" name = "retypepass" id = "retypepass" placeholder = "Nhập lại mật khẩu" required> 
+						
+					</td>
+
+				</tr>
+
+				<tr>
+		
+					<td>Ngày tháng năm sinh</td>
+
+					<td>
+
+						<select name="day" id = "day">
+
+							<option value="1">Ngày 1  </option>	
+							<option value="2">Ngày 2  </option>	
+							<option value="3">Ngày 3  </option>	
+							<option value="4">Ngày 4  </option>	
+							<option value="5">Ngày 5  </option>	
+
+
+						</select> / 
+						<select name="montd" id = "month">
+
+							<option value="1">Tháng 1  </option>	
+							<option value="2">Tháng 2  </option>	
+							<option value="3">Tháng 3  </option>	
+							<option value="4">Tháng 4  </option>	
+							<option value="5">Tháng 5  </option>	
+
+						</select> / 
+						
+						<select name="year" id = "year">
+
+							<option value="1994">Năm 1994  </option>	
+							<option value="2">Năm 1995  </option>	
+							<option value="3">Năm 1996  </option>	
+							<option value="4">Năm 1997  </option>	
+							<option value="5">Năm 1998  </option>	
+
+						</select>
+						
+							
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td>Giới tính</td>
+
+					<td>
+						<label><input type ="radio" name = "gender" value ="1" checked>Nam</label> 
+						
+						<label><input type ="radio" name = "gender" value ="0">Nữ </label>
+
+					</td>
+
+				</tr>
+
+				<tr>
+					<td><label for id = "address">Địa chỉ</label></th>
+
+					<td>
+
+						<textarea name ="address" id = "address" rows="5" cols="45"> </textarea>
+
+					</td>
+				</tr>				
+
+				<tr>
+					<td><label for = "avatar"> Chọn ảnh đại diện </label></th>
+	
+					<td>
+
+						<input type= "file"  name ="avatar" id = "avatar"> 
+
+					</td>
+				</tr>				
+
+				<tr>
+
+					<td> Sở thích</th>
+
+					<td>
+
+						<label>	<input type ="checkbox" value= = "1">Lướt web </label> 	
+					
+						<label> <input type ="checkbox" value= = "2">Chơi tdể thao</label>
+					
+						<label> <input type ="checkbox" value= = "3">Đọc báo</label>	
+					
+					</td>
+				</tr>
+
+				<td colspan = "2" align = "center">
+
+					<input  type = "reset" value = "Khôi phục lại ban đầu">
+
+					<button  type = "submit">Đăng kí</button>
+				</td>
+
+			</table>
+
+		</form> 
+
+</html>
+

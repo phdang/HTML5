@@ -4,12 +4,13 @@
 
      <head>
 
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type = "text/css">
 
 	<style type="text/css">
 
 	body{
-		width:500px;
 		border:solid 1px gray;
 
 	}
@@ -63,7 +64,9 @@
 
      <body>
 
-	<h2 class ="red-text">CatPhotoApp</h2>
+      <div class = "container-fluid">
+	
+	<h2 class ="red-text text-center">CatPhotoApp</h2>
 
 	<p>Click here for <a href="#">cat photos</a>.</p>
 
@@ -72,9 +75,35 @@
 		<! img khong phai la the dong>
 		<img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back. " src="https://bit.ly/fcc-relaxing-cat">
 
-
 	</a>
 
+	<br>	
+
+	<img class = "img-responsive" src="https://bit.ly/fcc-running-cats" alt = "Three kittens running towards the camera.">
+		
+	<br>
+	
+	<div class="row">	
+
+		<div class="col-xs-4">
+
+			<button class="btn btn-block btn-primary">Like</button>
+
+		</div>
+
+		<div class="col-xs-4">
+		
+			<button class="btn btn-block btn-info">Info</button>
+
+		</div>
+	
+		<div class="col-xs-4">
+			
+			<button class="btn btn-block btn-danger">Delete</button>
+		</div>
+	
+	</div>
+	
 	<div class="silver-background">
 
 		<p>Things cats love:</p>
@@ -82,7 +111,7 @@
 		<ul>
 
 			<li>cat nip</li>
-			<li> laser pointers</li>
+			<li>laser pointers</li>
 			<li>lasagna</li>
 
 
@@ -144,6 +173,7 @@
 
 		</label>
 
+	<br>	
 
 	<input type ="text" placeholder="cat photo URL" required>
 
@@ -151,6 +181,8 @@
 
     	</form>
 	
+      </div>
+ 	
      </body>
 
 

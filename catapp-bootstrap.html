@@ -2,219 +2,214 @@
 
 <html>
 
-     <head>
+<head>
 
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<link rel= "stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type = "text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
-	<style type="text/css">
-
-
-	h2{font-family:Lobster, Monospace;}
-
-
-	.thick-green-border{
-
-		border-color:green;
-		border-width:10px;
-		border-style:solid;
-		border-radius: 50%;
-
-	}
+  <style type="text/css">
+    h2 {
+    	  font-size:150px;
+	
+	  font-family: Lobster, Monospace;
+    }
 
 
-	.silver-background{
+    .thick-green-border {
 
-		background-color:silver;
+      border-color: green;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 50%;
 
-	}
-
-
-
-	</style>
-
-
-	<meta charset ="UTF-8">
-
-	<title>Các làm một form khảo sát trong HTML               </title>
+    }
 
 
-     </head>
+    .silver-background {
+
+      background-color: silver;
+
+    }
+  </style>
 
 
+  <meta charset="UTF-8">
+
+  <title>Các làm một form khảo sát trong HTML </title>
 
 
-     <body>
+</head>
 
-      <div class = "container-fluid">
+<body>
 
-	<div class="row">
-    
- 		  <div class="col-xs-8">
-  			<h2 class="text-primary text-center">CatPhotoApp</h2>
-   		  </div>
-    
- 	  	  <div class="col-xs-4">
+  <div class="container-fluid">
 
-			  <a href="#">
+    <div class="row">
+
+      <div class="col-xs-8">
+        <h2 class="text-primary text-center">CatPhotoApp</h2>
+      </div>
+
+      <div class="col-xs-4">
+
+        <a href="#">
 
 				<img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. ">
 		 	  </a>
-      
-  		  </div>
-    
-	  </div>	
 
-	<br>	
+      </div>
 
-	<img class = "img-responsive" src="https://bit.ly/fcc-running-cats" alt = "Three kittens running towards the camera.">
-		
-	<br>
-	
-	<div class="row">	
+    </div>
 
-		<div class="col-xs-4">
+    <br>
 
-			<button class="btn btn-block btn-primary">Like <i class="fa fa-thumbs-up"></i></button>
+    <img class="img-responsive" src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera.">
 
-		</div>
+    <br>
 
-		<div class="col-xs-4">
-		
-			<button class="btn btn-block btn-info">Info <i class="fa fa-info-circle"></i></button>
+    <div class="row">
 
-		</div>
-	
-		<div class="col-xs-4">
-			
-			<button class="btn btn-block btn-danger">Deletei <i class="fa fa-trash"></i></button>
-		</div>
-	
-	</div>
-	
-	<div class="silver-background">
+      <div class="col-xs-4">
 
-		<p>Things cats <span class="text-danger">love:</span></p>
+        <button class="btn btn-block btn-primary">Like <i class="fa fa-thumbs-up"></i></button>
 
-		<ul>
+      </div>
 
-			<li>cat nip</li>
-			<li>laser pointers</li>
-			<li>lasagna</li>
+      <div class="col-xs-4">
 
+        <button class="btn btn-block btn-info">Info <i class="fa fa-info-circle"></i></button>
 
-		</ul>    
+      </div>
 
-		<p>Top 3 things cats hate:</p>
+      <div class="col-xs-4">
 
-		<ol type="1">
+        <button class="btn btn-block btn-danger">Deletei <i class="fa fa-trash"></i></button>
+      </div>
 
-			<li>flea treatment</li>
-			<li> thunders</li>
-			<li>other cats</li>
+    </div>
+
+    <div class="silver-background">
+
+      <p>Things cats <span class="text-danger">love:</span></p>
+
+      <ul>
+
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
 
 
-		</ol>    
-	
-	</div>
+      </ul>
 
-	<form action="/submit-cat-photo">
+      <p>Top 3 things cats hate:</p>
 
-		<div class="row">
+      <ol type="1">
 
-		    <div class="col-xs-6">
+        <li>flea treatment</li>
+        <li> thunders</li>
+        <li>other cats</li>
 
-			<label>
-		
-				<input type="radio" name = "indoor-outdoor" checked> <!input khong phai la the dong>
+
+      </ol>
+
+    </div>
+
+    <form action="/submit-cat-photo">
+
+      <div class="row">
+
+        <div class="col-xs-6">
+
+          <label>
+
+				<input type="radio" name = "indoor-outdoor" checked> <!--input khong phai la the dong-->
 
 				Indoor
 
 			</label>
 
-		    </div>
+        </div>
 
-		    <div class="col-xs-6">
-		   	
-			<label>
-		
-				<input type="radio" name = "indoor-outdoor" > <!input khong phai la the dong>
+        <div class="col-xs-6">
+
+          <label>
+
+				<input type="radio" name = "indoor-outdoor" > <!--input khong phai la the dong-->
 
 				Outdoor
 
 			</label>
 
-		    </div>
+        </div>
 
-		</div>
+      </div>
 
-		<div class="row">
+      <div class="row">
 
-		    <div class="col-xs-4">		
+        <div class="col-xs-4">
 
-			<label>
-		
-				<input type="checkbox" name = "personality" checked> <!input khong phai la the dong>
+          <label>
+
+				<input type="checkbox" name = "personality" checked> <!--input khong phai la the dong-->
 
 				Loving
 
 			</label>
 
-		    </div>
-		
-		    <div class="col-xs-4">		
-	
-			<label>
+        </div>
 
-				<input type="checkbox" name = "personality" > <!input khong phai la the dong>
+        <div class="col-xs-4">
+
+          <label>
+
+				<input type="checkbox" name = "personality" > <!--input khong phai la the dong-->
 
 				Lazy
 
 				</label>
 
-		    </div>
+        </div>
 
-		    <div class="col-xs-4">		
-		    
+        <div class="col-xs-4">
 
-			<label>
-		
-				<input type="checkbox" name = "personality" > <!input khong phai la the dong>
+
+          <label>
+
+				<input type="checkbox" name = "personality" > <!--input khong phai la the dong-->
 
 				Energetic
 
 			</label>
 
-		    </div>		
-	
-		</div>
+        </div>
 
-	<br>	
-
-	<div class="row">
-
-		<div class="col-xs-7">
-	
-			<input class="form-control" type ="text" placeholder="cat photo URL" required>
-		</div>
-
-		<div class="col-xs-5">
-
-
-			<button class="btn btn-primary" type="submit">Submit <i class="fa fa-paper-plane"></i></button>
-		
-		</div>
-	</div>
-
-    	</form>
-	
       </div>
- 	
-     </body>
+
+      <br>
+
+      <div class="row">
+
+        <div class="col-xs-7">
+
+          <input class="form-control" type="text" placeholder="cat photo URL" required>
+        </div>
+
+        <div class="col-xs-5">
+
+
+          <button class="btn btn-primary" type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
 
 
 </html>
-

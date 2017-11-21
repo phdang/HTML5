@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+
+     <head>
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">  
+
+        <link rel= "stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link href="animate.css" rel="stylesheet">  
+	
+	<script src="jquery-3.2.1.min.js"></script>
+
+	<script src="bootstrap.min.js"></script>	
+
+	<style type="text/css">
+
+
+
+
+
+
+
+	</style>
+
+	<meta charset ="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dropdowns In Bootstrap 3</title>
+
+
+     </head>
+
+     <body>
+
+	<div class="container">
+
+		<h2>Dropdowns</h2>
+		
+		<p>The <code>.divider</code> class is used to separate links inside the dropdown menu with a thin horizontal line: </p>
+
+		<div class = "dropdown">
+
+		<button type="button" class = "dropdown-toggle btn btn-primary" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+
+		<ul class ="dropdown-menu">
+
+			<li><a href="#">HTML</a></li>		
+
+			<li><a href="#">CSS</a></li>		
+
+			<li><a href="#">JavaScript</a></li>		
+
+			<li class = "divider"></li>
+
+			<li><a href="#">About us</a></li>		
+		</ul>
+		
+		</div>
+
+		<p>The <code>.dropdown-header</code> class is used to add header inside the dropdown menu: </p>
+
+		<div class = "dropdown">
+
+		<button type="button" class = "dropdown-toggle btn btn-primary" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+
+		<ul class ="dropdown-menu">
+
+
+			<li class="dropdown-header">Dropdown header 1</li>		
+
+			<li><a href="#">HTML</a></li>		
+
+			<li><a href="#">CSS</a></li>		
+
+			<li><a href="#">JavaScript</a></li>		
+
+			<li class = "divider"></li>
+
+			<li class="dropdown-header">Dropdown header 2</li>		
+
+			<li><a href="#">About us</a></li>		
+		</ul>
+		
+		</div>
+
+			
+		<p>Add the <code>.dropdown-menu-rightr</code> class inside <code>&lt;ul&gt;</code> is used to make the dropdown menu display on the right: </p>
+
+		<div class = "dropdown">
+
+		<button type="button" class = "dropdown-toggle btn btn-primary" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+
+		<ul class ="dropdown-menu dropdown-menu-right">
+
+
+			<li class="dropdown-header">Dropdown header 1</li>		
+
+			<li><a href="#">HTML</a></li>		
+
+			<li><a href="#">CSS</a></li>		
+
+			<li><a href="#">JavaScript</a></li>		
+
+			<li class = "divider"></li>
+
+			<li class="dropdown-header">Dropdown header 2</li>		
+
+			<li><a href="#">About us</a></li>		
+		</ul>
+		
+		</div>
+
+		<p>Change the <code>.dropdown</code> class inside <code>&lt;div&gt;</code> to <code>.dropup</code>  to create a dropup menu: </p>
+
+		<div class = "dropup">
+
+		<button type="button" class = "dropdown-toggle btn btn-primary" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+
+		<ul class ="dropdown-menu">
+
+
+			<li class="dropdown-header">Dropdown header 1</li>		
+
+			<li><a href="#">HTML</a></li>		
+
+			<li><a href="#">CSS</a></li>		
+
+			<li><a href="#">JavaScript</a></li>		
+
+			<li class = "divider"></li>
+
+			<li class="dropdown-header">Dropdown header 2</li>		
+
+			<li><a href="#">About us</a></li>		
+		</ul>
+		
+		</div>
+		
+		<h2>Dropdown Accessibility</h2>
+
+		<p>
+			To improve accessibility for people using screen readers, 
+			you should include the following <code>role</code> and <code>aria-*</code> attributes, when create a dropdown menu: 
+
+		</p>
+
+		
+		<div class = "dropdown">
+
+		<button type="button" id = "menu1" class = "dropdown-toggle btn btn-primary" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+
+		<ul class ="dropdown-menu" role="menu" aria-labelledby="menu1">
+
+
+			<li class="dropdown-header">Dropdown header 1</li>		
+
+			<li role="presentation"><a role="menuitem" href="#">HTML</a></li>		
+
+			<li role="presentation"><a role="menuitem" href="#">CSS</a></li>		
+
+			<li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>		
+
+			<li class = "divider"></li>
+
+			<li class="dropdown-header">Dropdown header 2</li>		
+
+			<li role="presentation"><a role="menuitem" href="#">About</a></li>		
+		</ul>
+		
+		</div>
+
+
+	</div>
+    
+     </body>
+
+
+</html>
+

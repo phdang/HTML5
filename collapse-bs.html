@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+     <head>
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">  
+
+        <link rel= "stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link href="animate.css" rel="stylesheet">  
+	
+	<script src="jquery-3.2.1.min.js"></script>
+
+	<script src="bootstrap.min.js"></script>	
+
+	<style type="text/css">
+
+
+
+
+
+
+
+	</style>
+
+	<meta charset ="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Collapse in Bootstrap</title>
+
+     </head>
+
+
+
+
+     <body>
+
+	<div class="container code">
+
+		<h2>Simple Collapsible</h2>
+
+		<p>Click on the button to toggle between showing and hiding content.</p>
+
+		<button type = "button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+
+		<a href="#demo" class="btn btn-info" data-toggle="collapse">Simple collapsible</a>
+
+    		<div class="collapse in" id="demo">
+			
+			<p> 
+
+				The <code>.collapse</code> class indicates a collapsible element (a &lt;div&gt; in our example); 
+	
+				this is the content that will be shown or
+
+				hidden with a click of a button.
+
+				<br>
+
+				To control (show/hide) the collapsible content, add the <code>data-toggle="collapse"</code> 
+
+				attribute to an &lt;a&gt; or a &lt;button&gt;
+
+				element. Then add the <code>data-target="#id"</code> attribute to connect the button with the collapsible content
+	
+				(<code>&lt;div id="demo"&gt;</code>)
+
+			</p> 
+	
+
+			<p>
+
+			<strong>Note:</strong> For &lt;a&gt; elements, you can use the <code>href</code> 
+
+			attribute instead of the <code>data-target</code> attribute:
+
+			</p>
+
+			<p>By default, the collapse content is hidden. However, you can add the <code>.in</code> class to show the content by default: </p>
+
+		</div>
+
+	</div>
+    
+     </body>
+
+
+</html>
+

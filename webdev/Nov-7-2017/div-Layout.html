@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Dùng thẻ Div làm layout</title>
+
+<style>
+
+	*{
+		
+		padding:0;
+		margin:0;	
+		box-sizing:border-box;
+		
+	}
+
+	nav a {
+		text-decoration:none;
+	}
+		
+	a {
+		
+		color:white;
+		font-size:24px;
+		padding:5px;
+		background-color:#108F8C;
+		
+	}
+	
+	.container{
+		
+		width:90%;
+		margin:auto;
+		
+	}
+	
+	#header{
+		
+		height:100px;
+		background-color:lightpink;
+	}
+
+	#menu{
+		
+		height:40px;
+		background-color:#e4d6d5;
+		opacity:70%
+		
+		
+	}
+
+	#left{
+		width:30%;
+		min-height:500px;
+		background-color:#bdbdbd;
+		float:left;
+	}
+	
+	#main{
+		width:70%;
+		min-height:500px;
+		background-color:#ededed;
+		padding:10px 5px;
+		/*margin:5px;*/
+		border:15px groove red;
+		float:left;
+		
+	}
+	
+/*	#right{
+		width:200px;
+		height:300px;
+		background-color:red;
+		float:left; 
+	}*/
+	
+	#footer{
+		
+		height:80px;
+		background-color:lightblue;
+		opacity:50%;
+		color: white;
+		font-size:25px;
+		padding-top:20px;
+		text-align:center;
+		clear:left;
+	}
+	
+
+	div.product{
+		
+		border: 2px ridge red;
+		
+		 width:29.33%;
+		
+		 text-align:center;
+		 
+		 padding:5px 10px 10px 5px;
+		 margin:5px 2%;
+		
+		float:left;
+	}
+	
+	img{
+		
+		width:80%;
+		
+		
+	}
+	
+	
+	div h2{
+		
+		padding-top:5px;
+		padding-bottom:10px;
+		
+	}
+	
+	button{
+		
+		text-align:center;
+		padding-top:10px;
+		width:80%;
+		background-color: lightpink;
+		opacity:0.5;
+		color:#6130F1;
+		
+			
+	}
+
+</style>
+
+
+</head>
+
+
+<body>
+<div class="container">
+
+
+
+	<div id="header">header </div>
+    
+
+    
+
+	<div id="menu"> 
+    
+    <nav>
+      <a href="/html/">HTML</a> 
+      <a href="/css/">CSS</a> 
+      <a href="/js/">JavaScript</a> 
+      <a href="/jquery/">jQuery</a>
+	</nav>
+    
+    
+    </div>
+    
+
+    
+
+	<div id="left">left </div>
+    
+
+	<div id="main">
+    
+    	
+        	<div class="product">
+        	
+                <h2>Gấu Koala</h2>
+                
+                <img src="../Koala.jpg" alt="gấu bông koala">
+                
+                <h3>Giá: 100.000đ </h3>
+                
+                <button type="button" name="mua">Mua</button>
+            </div>
+            
+            
+            
+        
+
+    	<div class="product">
+        	
+                <h2>Chim cánh cụt</h2>
+                
+                <img src="../Penguins.jpg" alt="Chim cánh cụt">
+                
+                <h3>Giá: 200.000đ </h3>
+                
+                <button type="button" name="mua">Mua</button>
+          </div>
+   		 <div class="product">
+        	
+                <h2>Sứa</h2>
+                
+                <img src="../Jellyfish.jpg" alt="sua">
+                
+                <h3>Giá: 500.000đ </h3>
+                
+                <div class="buttonproduct"><button type="button" name="mua">Mua</button></div>
+         </div>
+         
+         <div class="product">
+        	
+                <h2>Gấu Koala</h2>
+                
+                <img src="../Koala.jpg" alt="gấu bông koala">
+                
+                <h3>Giá: 100.000đ </h3>
+                
+                <button type="button" name="mua">Mua</button>
+            </div>
+                
+      	<div class="product">
+        	
+                <h2>Chim cánh cụt</h2>
+                
+                <img src="../Penguins.jpg" alt="Chim cánh cụt">
+                
+                <h3>Giá: 200.000đ </h3>
+                
+                <button type="button" name="mua">Mua</button>
+          </div>
+   		 <div class="product">
+        	
+                <h2>Sứa</h2>
+                
+                <img src="../Jellyfish.jpg" alt="sua">
+                
+                <h3>Giá: 500.000đ </h3>
+                
+                <button type="button" name="mua">Mua</button>
+         </div>
+         
+         
+         
+         
+         
+     </div>
+    
+
+	<!--<div id="right"> </div>-->
+    
+
+
+
+    
+    
+    <div id="footer">&copy; All reversed 2017. Written and coded by Dang</div>
+    
+
+
+</div>
+
+</body>
+
+
+</html>

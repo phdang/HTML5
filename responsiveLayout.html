@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsive Layout</title>
+
+<link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+
+@font-face {
+
+	font-family:phdang;
+	src: url("sansation_light.woff");
+
+}
+
+	*{
+		box-sizing:border-box;
+		margin:0px;
+		padding::0px;
+	}
+
+	.container{
+
+		width:90%;
+		margin:auto;
+	}
+
+	.container *{
+
+		max-width:100%;
+	}
+
+	.header{
+
+		height:100px;
+		background-color:#7321ad;
+	}
+
+	.menu{
+
+		height:40px;
+		margin-top:5px;
+		margin-bottom:5px;
+		background-color:#ededed;
+		font-family: phdang;
+	}
+
+	#toggle-menu{
+
+		display:none;
+		width: 40px;
+		height:40px;
+		border:none;
+		background-color: lavender;
+		color:red;
+
+	}
+
+	.menu ul{
+
+		margin:0;
+		padding:0;
+
+	}
+
+	.menu ul li ul{
+
+		margin:0;
+		padding:0;
+
+	}
+	.menu ul>li{
+
+		float:left;
+		padding:10px 30px;
+		list-style-type:none;
+		border-right:1px dotted red;
+
+
+	}
+
+	.menu li:last-child{
+
+		border-right:none;
+
+	}
+
+	.menu li li{
+
+		border-right:none;
+	}
+
+	.menu a{
+		padding:10px;
+
+	}
+	.menu a:hover{
+
+		color:red;
+		background-color: lightblue;
+
+	}
+
+	.menu ul ul{
+		transition:all 1s 0s linear;
+		opacity:0;
+
+	}
+
+	.menu ul li:hover > ul{
+
+		opacity:0.8;
+		background: radial-gradient(circle,red,yellow,lightcyan);
+		transform:rotate(15deg);
+		transition:all 1s 0s ease-in;
+	}
+
+	.menu ul a{
+
+		text-decoration:none;
+
+	}
+
+	.menu ul li{
+		position:relative;
+	}
+	.menu ul li ul{
+		position:absolute;
+		top:100%;
+		left:0;
+		float:none;
+	}
+
+	.menu li li{
+		white-space:pre;
+	}
+	.clear-menu{
+		clear:both;
+	}
+
+	.left, .right{
+		min-height:1000px;
+		width:20%;
+		float:left;
+		background-color:lightpink;
+		background-image: url("fjords.jpg");
+	}
+
+	.main{
+		min-height:1000px;
+		width: 59%;
+		margin-right:0.5%;
+		margin-left:0.5%;
+		float:left;
+		background-color:#fff;
+	}
+
+
+	.clear-fix{
+
+		clear:both;
+
+	}
+
+	.footer{
+		margin-top:5px;
+		height:80px;
+		clear:left;
+		background-color:lavender;
+
+		}
+
+	.menu > ul{
+
+
+	}
+
+@media screen and (max-width:1000px){
+
+	.header{
+
+		background-color: lavender;
+
+	}
+
+	.menu >ul{
+
+			display:none;
+	}
+
+	.left,.main,.right{
+
+		width:33%;
+
+	}
+
+	#toggle-menu{
+
+		display:block;
+
+	}
+
+}
+
+
+
+@media screen and (max-width:768px){
+
+	.left{
+
+		width:49.5%;
+
+	}
+
+	.main{
+
+		width:49.5%;
+		margin-right:0;
+		margin-left:1%;
+
+
+	}
+	.right{
+
+		width:100%;
+
+
+
+
+	}
+
+
+}
+
+@media screen and (max-width:480px){
+
+
+
+	.left,.main,.right{
+
+		margin:0;
+
+		width:100%;
+
+
+	}
+
+
+
+	}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+
+</div>
+
+<div class="menu">
+
+	<button type="button" id="toggle-menu"><i class="fa fa-bars"></i></button>
+
+	<ul>
+    	<li> <a href="#">Trang chủ</a></li>
+
+        <li><a href="#">Sản phẩm</a>
+
+            <ul>
+
+            	<li><a href="#">Điện thoại</a></li>
+
+                <li><a href="#">Máy tính</a></li>
+
+            </ul>
+
+        </li>
+
+        <li><a href="#">Liên hệ</a></li>
+
+        <li><a href="#">Đặt mua</a></li>
+
+        <li><a href="#">Quảng cáo</a></li>
+
+    	<li><a href="#">Đăng nhập</a></li>
+
+    </ul>
+
+
+</div>
+
+<div class="clear-menu">
+
+</div>
+
+<div class="left">
+
+	<img src="lights.jpg" alt="nature">
+
+</div>
+
+<div class="main">
+
+	<img src="nature.jpg" alt="nature">
+
+</div>
+
+<div class="right">
+
+	<img src="fjords.jpg" alt="nature">
+
+
+</div>
+
+<div class="clear-fix">
+
+</div>
+
+<div class="footer">
+
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>

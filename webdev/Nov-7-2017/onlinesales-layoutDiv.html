@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+
+	<title>Dùng thẻ Div làm layout</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type = "text/css">
+	<link href="../../animate.css" rel="stylesheet">
+
+
+	<script src="../../jquery-3.2.1.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			$("#header").addClass("animated bounce");
+		});
+	</script>
+
+
+	<style>
+		* {
+
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+
+		}
+
+
+		.container {
+
+			width: 90%;
+			margin: auto;
+
+		}
+
+		#header {
+
+			height: 100px;
+		}
+
+		#header h1{
+			color:blue;
+			font-size:80px;
+			font-family: Lobster, monospace;
+			text-align: center;
+		}
+
+		#menu {
+
+			height: 40px;
+			background-color: #e4d6d5;
+			opacity: 70%
+		}
+
+		nav a {
+
+			border-radius:5px;
+			display: inline-block;
+			text-decoration: none;
+			font-size:20px;
+			color:white;
+		}
+
+		a{
+			margin-top:8px;
+			margin-bottom: 5px;
+			margin-left: 0%;
+			margin-right: 5%;
+		}
+
+		nav {
+			height:40px;
+			background-color:#ad143d;
+
+		}
+
+		nav a:hover{
+
+			background-color:#c9365d;
+			opacity:1;
+		}
+
+		#left {
+			background: url("../../shop.png") no-repeat;
+			width: 30%;
+			min-height: 627px;
+			background-color: #fff;
+			float: left;
+		}
+
+
+		#main {
+			width: 70%;
+			min-height: 400px;
+			background-color: #fff;
+			padding: 10px 5px;
+			/*margin:5px;*/
+			float: left;
+			z-index: -10px;
+
+		}
+
+		.product {
+
+			border: 2px solid red;
+			border-radius: 5%;
+			width: 31.33%;
+			text-align: center;
+			padding: 5px 10px 5px 10px;
+			margin:1%;
+			float:left;
+		}
+
+		img {
+			width: 80%;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+
+		button {
+
+			font-size: 20px;
+			width: 33.33%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		/*	#right{
+		width:200px;
+		height:300px;
+		background-color:red;
+		float:left;
+	}*/
+
+		#footer {
+
+			height: 50px;
+			background-color: #ad143d;
+			color: white;
+			font-size: 18px;
+			padding-top: 0.6%;
+			text-align: center;
+			clear: left;
+		}
+
+		#footer:hover{
+				opacity: 0.5;
+
+
+
+
+		}
+
+
+	</style>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+
+
+
+		<div id="header">
+
+			<h1>Onlinesales.vn</h1>
+
+		 </div>
+
+
+
+
+		<div id="menu">
+
+			<nav>
+				<a href="file:///html/">Menu1</a>
+				<a href="file:///css/">Menu2</a>
+				<a href="file:///js/">Menu3</a>
+				<a href="file:///jquery/">Menu4</a>
+				<a href="file:///jquery/">Menu5</a>
+				<a href="file:///jquery/">Menu6</a>
+			</nav>
+
+
+		</div>
+
+
+
+
+		<div id="left"> </div>
+
+
+		<div id="main">
+
+			<div class="product">
+
+				<h2>Tên sản phẩm</h2>
+
+				<img src="../Koala.jpg" alt="gấu Koala">
+
+				<h3>Giá: 1,000,000 VNĐ</h3>
+
+				<button type="button" name="mua">Mua</button>
+
+			</div>
+
+			<div class="product">
+
+				<h2>Tên sản phẩm</h2>
+
+				<img src="../Koala.jpg" alt="gấu Koala">
+
+				<h3>Giá: 1,000,000 VNĐ</h3>
+
+				<button type="button" name="mua">Mua</button>
+
+			</div>
+
+			<div class="product">
+
+				<h2>Tên sản phẩm</h2>
+
+				<img src="../Koala.jpg" alt="gấu Koala">
+
+				<h3>Giá: 1,000,000 VNĐ</h3>
+
+				<button type="button" name="mua">Mua</button>
+
+			</div>
+
+			<div class="product">
+
+				<h2>Tên sản phẩm</h2>
+
+				<img src="../Koala.jpg" alt="gấu Koala">
+
+				<h3>Giá: 1,000,000 VNĐ</h3>
+
+				<button type="button" name="mua">Mua</button>
+
+			</div>
+
+			<div class="product">
+
+				<h2>Tên sản phẩm</h2>
+
+				<img src="../Koala.jpg" alt="gấu Koala">
+
+				<h3>Giá: 1,000,000 VNĐ</h3>
+
+				<button type="button" name="mua">Mua</button>
+
+			</div>
+
+			<div class="product">
+
+				<h2>Tên sản phẩm</h2>
+
+				<img src="../Koala.jpg" alt="gấu Koala">
+
+				<h3>Giá: 1,000,000 VNĐ</h3>
+
+				<button type="button" name="mua">Mua</button>
+
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+
+		<!--<div id="right"> </div>-->
+
+
+
+
+
+
+		<div id="footer">© All rights reserved 2017<br>Written and coded by phdang</div>
+
+
+
+	</div>
+
+
+
+
+
+</body>
+
+</html>

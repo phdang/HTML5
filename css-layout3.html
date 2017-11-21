@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+*
+{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+#wrapper
+{
+	width:90%;
+	margin:auto;
+}
+#header
+{
+	height:100px;
+	background-color:#CF3;
+}
+#menu
+{
+	height:40px;
+	background-color:#CF9;
+	margin:5px 0;
+	position:sticky;
+	top:0;
+}
+#left, #right
+{
+	width:20%;
+	height:300px;
+	background-color:#FCC;
+	float:left;
+}
+#main
+{
+	width:59%;
+	height:1000px;
+	background-color:#CCC;
+	float:left;
+	margin:0 0.5%;
+}
+#footer
+{
+	height:80px;
+	background-color:#039;
+	clear:left;
+	margin-top:5px;
+}
+.clear-fix
+{
+	clear:both;
+}
+
+
+#menu ul
+{
+	list-style-type:none;
+}
+
+#menu ul li
+{
+	float: left;
+    padding: 10px 40px;
+    border-right: 1px dotted red;
+		position:relative;
+}
+
+#menu a
+{
+	text-decoration:none;
+
+}
+#menu a:hover
+{
+	text-decoration:underline;
+	color:red;
+}
+
+/*Menu cap 2 */
+#menu ul ul
+{
+	position:absolute;
+	top:100%;
+	left:0;
+	border:1px solid red;
+	display:none;
+}
+#menu ul ul li
+{
+	float:none;
+	white-space: pre;
+}
+
+#menu ul li:hover > ul
+{
+	display:block;
+}
+/* Menu cap 3*/
+#menu li ul{
+	width:100%;
+	border:1px solid purple;
+}
+
+#menu ul ul>li{
+	border:1px solid green;
+}
+#menu ul ul ul
+{
+	left:100%;
+	top:0;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="header">1</div>
+    <div id="menu">
+    	<ul>
+        	<li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Sản phẩm</a>
+            	<ul>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Máy tính</a>
+                    	<ul>
+                            <li><a href="#">DELL</a></li>
+                            <li><a href="#">ASUS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Hướng dẫn</a></li>
+            <li><a href="#">Liên hệ</a>
+            	<ul>
+                    <li><a href="#">Điện thoại</a>
+                    	<ul>
+                            <li><a href="#">DELL</a></li>
+                            <li><a href="#">ASUS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Máy tính</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Đăng nhập</a></li>
+        </ul>
+
+
+
+    </div>
+    <div id="left">3</div>
+    <div id="main">4</div>
+    <div id="right">5</div>
+    <div class="clear-fix"></div>
+    <div id="footer">6</div>
+</div>
+</body>
+</html>

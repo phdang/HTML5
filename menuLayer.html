@@ -5,6 +5,10 @@
 
 	<meta charset="utf-8">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<title>Menu Layer</title>
 
 	<style>
@@ -47,11 +51,6 @@
 
 		}
 
-		.menu a:visited {
-
-
-		}
-
 		.menu a:hover {
 
 			color: red;
@@ -62,6 +61,7 @@
 		.menu a {
 
 			text-decoration: none;
+			color: darkslateblue;
 			padding: 10px;
 
 
@@ -70,7 +70,7 @@
 		.menu ul li {
 
 			float: left;
-			padding: 10px 40px;
+			padding: 10px 30px;
 			list-style-type: none;
 			border-right: 1px dotted blue;
 			position: relative;
@@ -98,7 +98,9 @@
 			position: absolute;
 			top: 100%;
 			left: 0%;
-			display: none;
+			/* display: :none;*/
+			transition:all 1s 0s linear;
+			opacity:0;
 
 		}
 
@@ -110,8 +112,13 @@
 		}
 
 		.menu ul li:hover>ul {
+			transform:rotate(5deg);
 
-			display: block;
+			transition:all 1s 0s linear;
+
+			opacity:1;
+
+			/*display: block; */
 		}
 
 		/* Menu cap 3 */
@@ -183,16 +190,16 @@
 		<div class="menu">
 
 			<ul>
-				<li> <a href="#">Trang chủ</a></li>
+				<li> <a href="#"><i class="fa fa-home" style="font-size:20px;"></i> Trang chủ</a></li>
 
-				<li><a href="#">Giới thiệu</a></li>
+				<li><a href="#"><i class="fa fa-share-alt-square"></i> Giới thiệu</a></li>
 
 				<li>
-					<a href="#">Sản phẩm</a>
+					<a href="#"><i class="fa fa-laptop"></i> Sản phẩm</a>
 
 					<ul>
 
-						<li><a href="#">Điện thoại</a>
+						<li><a href="#"><i class="fa fa-mobile"></i> Điện thoại</a>
 
 							<ul>
 
@@ -206,7 +213,7 @@
 
 						</li>
 
-						<li><a href="#">Máy tính</a>
+						<li><a href="#"><i class="fa fa-desktop"></i> Máy tính</a>
 
 							<ul>
 
@@ -232,7 +239,7 @@
 								<li><a href="#">Macbook Air</a></li>
 							</ul>
 
-							<li><a href="#">Máy tính bảng</a>
+							<li><a href="#"><i class="fa fa-tablet"></i> Máy tính bảng</a>
 
 								<ul>
 
@@ -246,7 +253,7 @@
 
 							</li>
 
-							<li><a href="#">Đồng hồ</a>
+							<li><a href="#"><i class="fa fa-clock-o"></i> Đồng hồ</a>
 
 								<ul>
 
@@ -267,13 +274,13 @@
 
 				</li>
 
-				<li><a href="#">Đã qua sử dụng</a></li>
+				<li><a href="#"><i class="fa fa-check-square"></i> Đã qua sử dụng</a></li>
 
-				<li><a href="#">Đặt mua</a></li>
+				<li><a href="#"><i class="fa fa-shopping-cart"></i> Đặt mua</a></li>
 
-				<li><a href="#">Liên hệ</a></li>
+				<li><a href="#"><i class="fa fa-address-card"></i> Liên hệ</a></li>
 
-				<li><a href="#">Đăng nhập</a></li>
+				<li><a href="#"><i class="fa fa-sign-in"></i> Đăng nhập</a></li>
 
 			</ul>
 

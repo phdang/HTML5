@@ -9,6 +9,10 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
 	<link href="animate.css" rel="stylesheet">
 
 	<script src="jquery-3.2.1.min.js"></script>
@@ -67,7 +71,7 @@
 		}
 
 		a {
-			margin-top: 8px;
+			margin-top: 5px;
 			margin-bottom: 5px;
 			margin-left: 0%;
 			margin-right: 5%;
@@ -82,6 +86,7 @@
 		nav a:hover {
 
 			background-color: #c9365d;
+			text-decoration: none;
 			opacity: 1;
 		}
 
@@ -105,7 +110,7 @@
 
 		}
 
-		.product {
+		.product,.fjords {
 
 			border: 2px solid red;
 			border-radius: 5%;
@@ -141,7 +146,7 @@
 
 		#footer {
 
-			height: 50px;
+			height: 60px;
 			background-color: #ad143d;
 			color: white;
 			font-size: 18px;
@@ -155,6 +160,39 @@
 		}
 	</style>
 
+	<link rel="stylesheet" href="css/multizoom.css" type="text/css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/multizoom.js"></script>
+
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function($){
+
+		  $('.product img').addimagezoom({ // single image zoom
+				zoomrange: [3],
+				magnifiersize: [300,300],
+				magnifierpos: 'right',
+				cursorshade: false,
+				largeimage: 'Koala.jpg' //<-- No comma after last option!
+			});
+
+			$('.fjords img').addimagezoom({ // single image zoom
+				zoomrange: [3],
+				magnifiersize: [300,300],
+				magnifierpos: 'right',
+				cursorshade: false,
+				largeimage: 'fjords.jpg' //<-- No comma after last option!
+			});
+
+
+
+
+	})
+
+	</script>
 
 </head>
 
@@ -176,12 +214,12 @@
 		<div id="menu">
 
 			<nav>
-				<a href="file:///html/">Menu1</a>
-				<a href="file:///css/">Menu2</a>
-				<a href="file:///js/">Menu3</a>
-				<a href="file:///jquery/">Menu4</a>
-				<a href="file:///jquery/">Menu5</a>
-				<a href="file:///jquery/">Menu6</a>
+				<a href="#">Menu1</a>
+				<a href="#">Menu2</a>
+				<a href="#">Menu3</a>
+				<a href="#">Menu4</a>
+				<a href="#">Menu5</a>
+				<a href="#">Menu6</a>
 			</nav>
 
 
@@ -195,15 +233,15 @@
 
 		<div id="main">
 
-			<div class="product">
+			<div class="fjords">
 
 				<h2>Tên sản phẩm</h2>
 
-				<img src="Koala.jpg" alt="gấu Koala">
+				<img src="fjords.jpg" alt="fjords">
 
-				<h3>Giá: 1,000,000 VNĐ</h3>
+				<h3>Giá: 999,000 VNĐ</h3>
 
-				<button type="button" name="mua">Mua</button>
+				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
 
 			</div>
 
@@ -215,7 +253,7 @@
 
 				<h3>Giá: 1,000,000 VNĐ</h3>
 
-				<button type="button" name="mua">Mua</button>
+				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
 
 			</div>
 
@@ -227,7 +265,7 @@
 
 				<h3>Giá: 1,000,000 VNĐ</h3>
 
-				<button type="button" name="mua">Mua</button>
+				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
 
 			</div>
 
@@ -239,7 +277,8 @@
 
 				<h3>Giá: 1,000,000 VNĐ</h3>
 
-				<button type="button" name="mua">Mua</button>
+				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+ Mua</button>
 
 			</div>
 
@@ -251,7 +290,8 @@
 
 				<h3>Giá: 1,000,000 VNĐ</h3>
 
-				<button type="button" name="mua">Mua</button>
+				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+ Mua</button>
 
 			</div>
 
@@ -263,7 +303,8 @@
 
 				<h3>Giá: 1,000,000 VNĐ</h3>
 
-				<button type="button" name="mua">Mua</button>
+				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+ Mua</button>
 
 			</div>
 

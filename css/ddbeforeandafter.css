@@ -1,0 +1,85 @@
+div.beforeandafter{ /* main container */
+	background: white;
+	border: 1px solid gray;
+	display: block;
+	height: 434px;
+	 /* default height of main container */
+	overflow: hidden;
+	position: relative;
+	width: 650px; /* default width of main container */
+}
+
+div.beforeandafter img{
+	max-width: none !important;
+}
+
+div.before, div.after{ /* before and after DIVs within main container */
+	/*height: 100%;*/
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	transition: width 0.4s ease-in-out; /* CSS transition. Actual duration set inside script (options.revealduration) */
+	width: 100%;
+	z-index: 100;
+}
+
+div.after{
+	z-index: 1; /* z-index of after div should be smaller than before's */
+}
+
+
+div.drag{ /* main div used for separating and dragging between before and after slides */
+	background: white;
+	cursor: col-resize;
+	display: block;
+	height: 100%;
+	left: 100%;
+	position: absolute;
+	top: 0;
+	transition: left 0.4s ease-in-out; /* transition. 0.4s sets duration of drag fade in time */
+	width: 2px; /* width of drag bar separator */
+	z-index: 1001;
+}
+
+div.drag div.draghandle{ /* handle bar within drag interface */
+	background: darkred;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+	background: rgb(169,3,41);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+	border-radius: 2px;
+	box-shadow: 0 0 5px gray;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+	height: 20%; /* height of drag handle */
+	position: absolute;
+	text-align: center;
+	width: 16px; /* width of drag handle */
+}
+
+div.before span.caption, div.after span.caption{ /* CAS to syle SPAN caption. Optional */
+	/*background: black;*/
+	bottom: 10px;
+	color: white;
+	display: block;
+	font: bold 12px Germand;
+	padding: 5px;
+	position: absolute;
+	right: 10px;
+	width: 90px;
+	opacity:0.8;
+}
+
+
+div.before span.caption{
+	left: 10px;
+	right: auto;
+}
+
+div.before span.caption a, div.after span.caption a{
+	color: lightyellow;
+	text-decoration: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/ddbeforeandafter.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script src="js/ddbeforeandafter.js">
+		/***********************************************
+		 * Before and After Image script (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		 * Please keep this notice intact
+		 * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		 ***********************************************/
+	</script>
+
+	<script>
+		jQuery(function() { // after DOM has loaded
+			bafinstance = new ddbeforeandafter({
+				wrapperid: 'baf',
+				initialreveal: ['50%', 0.5]
+			})
+		})
+	</script>
+	<style>
+
+			div.drag {
+
+				width: 3px;
+			}
+
+			div.drag div.draghandle {
+
+				display: none;
+
+			}
+			.beforeandafter{
+
+				width:40%; /*width of container to body */
+			}
+
+	</style>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+
+		const heightDiv = $('div.before > img ').outerHeight();
+
+		console.log(heightDiv);
+
+		$('div.beforeandafter').css('height',heightDiv);
+	})
+
+</script>
+
+</head>
+
+<body>
+
+	<div id="baf" class="beforeandafter">
+
+		<div class="before">
+			<img id="ny" width="80%" src="ny.jpg" />
+			<span class="caption">BEFORE</span>
+		</div>
+
+		<div class="after">
+			<img  id="la"width ="80%" src="la.jpg" />
+			<span class="caption">AFTER</span>
+		</div>
+
+	</div>
+
+	<div style="width:550px; margin-top:1em">
+
+		<div style="overflow:hidden; margin-bottom:1em">
+			<a href="#" onClick="bafinstance.unveil('100%'); return false" style="float:right">Show "after" image fully</a> <a href="#" onClick="bafinstance.unveil('0%'); return false">Show "before" image fully</a>
+		</div>
+
+		<div style="overflow:hidden; margin-bottom:1em">
+			<a href="#" onClick="bafinstance.unveil('70%'); return false" style="float:right">Show "after" image
+70%</a> <a href="#" onClick="bafinstance.unveil('20%'); return false">Show "after" image
+20%</a>
+		</div>
+
+	</div>
+</body>
+
+</html>

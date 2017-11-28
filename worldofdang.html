@@ -39,18 +39,21 @@
 
 					$("#myNavbar").css("z-index","199");
 
+					$("#myNavbar,#button-bars").attr("disabled","disabled");
+
+
+
+
+
+
 			});
 
-			$("#button-bars,#catagory").mouseenter(function(){
 
-			})
-
-				$("#myNavbar").mouseleave(function(){
+			$("#myNavbar").on("mouseleave",function(){
 
 						console.log("leave");
-
-
 						$(".product,.fjords,#main").on("click",function(){
+							$("#myNavbar,#button-bars").removeAttr("disabled","disabled");
 							// console.log("Click");
 							$("#button-bars").click();
 							$(".product,.fjords,#main").off("click");
@@ -89,7 +92,7 @@
 				<button type="button" id="button-bars" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span style="color:white" class="fa fa-bars"></span>
       </button>
-				<a class="navbar-brand" id="catagory" href="#">Danh Mục</a>
+				<a class="navbar-brand" id="catagory" href="#1">Danh mục <span class="caret"></span></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">

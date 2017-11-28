@@ -5,306 +5,194 @@
 
 	<meta charset="utf-8">
 
-	<title>Onlinesales.vn</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>WorldOfDang.vn</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
+	<script src="jquery-3.2.1.min.js"></script>
+
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
 	<link href="animate.css" rel="stylesheet">
 
-	<script src="jquery-3.2.1.min.js"></script>
-
 	<script>
 		$(document).ready(function() {
 
 			$("#header").addClass("animated bounce");
+
+			// $("#button-bars").on("click",function(){
+      //
+			// 	$("#myNavbar").show();
+			// });
+
+			$("#catagory").on("click",function(){
+
+					// $("#myNavbar").show();
+
+					$("#button-bars").click();
+
+			});
+
+			$("#button-bars,#catagory").mouseenter(function(){
+
+
+
+
+			})
+
+				$("#myNavbar").mouseleave(function(){
+
+						console.log("leave");
+
+
+						$(".product,.fjords,#main").on("click",function(){
+							// console.log("Click");
+							$("#button-bars").click();
+							$(".product,.fjords,#main").off("click");
+						})
+
 		});
+	})
 	</script>
 
+	<link rel="stylesheet" href="worldofdang-css.css">
 
 	<style>
-		* {
-
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-
-		}
 
 
-		.container {
 
-			width: 90%;
-			margin: auto;
-
-		}
-
-		#header {
-
-			height: 100px;
-		}
-
-		#header h1 {
-			color: blue;
-			font-size: 80px;
-			font-family: Lobster, monospace;
-			text-align: center;
-		}
-
-		#menu {
-
-			height: 40px;
-			background-color: #e4d6d5;
-			opacity: 70%
-		}
-
-		nav a {
-
-			border-radius: 5px;
-			display: inline-block;
-			text-decoration: none;
-			font-size: 20px;
-			color: white;
-		}
-
-		a {
-			margin-top: 5px;
-			margin-bottom: 5px;
-			margin-left: 0%;
-			margin-right: 5%;
-		}
-
-		nav {
-			height: 40px;
-			background-color: #ad143d;
-
-		}
-
-		nav a:hover {
-
-			background-color: #c9365d;
-			text-decoration: none;
-			opacity: 1;
-		}
-
-		#left {
-			background: url("shop.png") no-repeat;
-			width: 30%;
-			min-height: 627px;
-			background-color: #fff;
-			float: left;
-		}
-
-
-		#main {
-			width: 70%;
-			min-height: 400px;
-			background-color: #fff;
-			padding: 10px 5px;
-			/*margin:5px;*/
-			float: left;
-			z-index: -10px;
-
-		}
-
-		.product,.fjords {
-
-			border: 2px solid red;
-			border-radius: 5%;
-			width: 31.33%;
-			text-align: center;
-			padding: 5px 10px 5px 10px;
-			margin: 1%;
-			float: left;
-		}
-
-		img {
-			width: 80%;
-			margin-top: 10px;
-			margin-bottom: 5px;
-		}
-
-		button {
-
-			font-size: 20px;
-			width: 33.33%;
-			padding-top: 5px;
-			padding-bottom: 5px;
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-
-		/*	#right{
-		width:200px;
-		height:300px;
-		background-color:red;
-		float:left;
-	}*/
-
-		#footer {
-
-			height: 60px;
-			background-color: #ad143d;
-			color: white;
-			font-size: 18px;
-			padding-top: 0.6%;
-			text-align: center;
-			clear: left;
-		}
-
-		#footer:hover {
-			opacity: 0.5;
-		}
 	</style>
 
 	<link rel="stylesheet" href="css/multizoom.css" type="text/css" />
-
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-
 	<script type="text/javascript" src="js/multizoom.js"></script>
-
-
-	<script type="text/javascript">
-
-		jQuery(document).ready(function($){
-
-		  $('.product img').addimagezoom({ // single image zoom
-				zoomrange: [3],
-				magnifiersize: [300,300],
-				magnifierpos: 'right',
-				cursorshade: false,
-				largeimage: 'Koala.jpg' //<-- No comma after last option!
-			});
-
-			$('.fjords img').addimagezoom({ // single image zoom
-				zoomrange: [3],
-				magnifiersize: [300,300],
-				magnifierpos: 'right',
-				cursorshade: false,
-				largeimage: 'fjords.jpg' //<-- No comma after last option!
-			});
-
-
-
-
-	})
-
-	</script>
+	<script src="worldofdang-js.js"></script>
 
 </head>
 
 
 <body>
-	<div class="container">
+	<div id="header">
 
+		<h1>WorldOfDang.vn</h1>
 
+	</div>
 
-		<div id="header">
-
-			<h1>Onlinesales.vn</h1>
-
+	<nav class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" id="button-bars" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span style="color:white" class="fa fa-bars"></span>
+      </button>
+				<a class="navbar-brand" id="catagory" href="#">Danh Mục</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Trang Chủ</a></li>
+					<li><a href="#">Sản Phẩm</a></li>
+					<li><a href="#">Khuyến Mãi</a></li>
+					<li><a href="#">Liên Hệ</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li data-toggle="modal" data-target="#myModal"><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+				</ul>
+			</div>
 		</div>
 
+	</nav>
+	</div>
+
+	<div class="clear"></div>
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div id="left"> </div>
 
 
+			<div id="main">
 
-		<div id="menu">
+				<div class="fjords">
 
-			<nav>
-				<a href="#">Menu1</a>
-				<a href="#">Menu2</a>
-				<a href="#">Menu3</a>
-				<a href="#">Menu4</a>
-				<a href="#">Menu5</a>
-				<a href="#">Menu6</a>
-			</nav>
+					<h2>Tên sản phẩm</h2>
 
+					<img src="fjords.jpg" alt="fjords">
 
-		</div>
+					<h4>Giá: 999,000 VNĐ</h4>
 
+					<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
 
+				</div>
 
+				<div class="product">
 
-		<div id="left"> </div>
+					<h2>Tên sản phẩm</h2>
 
+					<img src="Koala.jpg" alt="gấu Koala">
 
-		<div id="main">
+					<h4>Giá: 1,000,000 VNĐ</h4>
 
-			<div class="fjords">
+					<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
 
-				<h2>Tên sản phẩm</h2>
+				</div>
 
-				<img src="fjords.jpg" alt="fjords">
+				<div class="product">
 
-				<h3>Giá: 999,000 VNĐ</h3>
+					<h2>Tên sản phẩm</h2>
 
-				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
+					<img src="Koala.jpg" alt="gấu Koala">
 
-			</div>
+					<h4>Giá: 1,000,000 VNĐ</h4>
 
-			<div class="product">
+					<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
 
-				<h2>Tên sản phẩm</h2>
+				</div>
 
-				<img src="Koala.jpg" alt="gấu Koala">
+				<div class="product">
 
-				<h3>Giá: 1,000,000 VNĐ</h3>
+					<h2>Tên sản phẩm</h2>
 
-				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
+					<img src="Koala.jpg" alt="gấu Koala">
 
-			</div>
+					<h4>Giá: 1,000,000 VNĐ</h4>
 
-			<div class="product">
-
-				<h2>Tên sản phẩm</h2>
-
-				<img src="Koala.jpg" alt="gấu Koala">
-
-				<h3>Giá: 1,000,000 VNĐ</h3>
-
-				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mua</button>
-
-			</div>
-
-			<div class="product">
-
-				<h2>Tên sản phẩm</h2>
-
-				<img src="Koala.jpg" alt="gấu Koala">
-
-				<h3>Giá: 1,000,000 VNĐ</h3>
-
-				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
  Mua</button>
 
-			</div>
+				</div>
 
-			<div class="product">
+				<div class="product">
 
-				<h2>Tên sản phẩm</h2>
+					<h2>Tên sản phẩm</h2>
 
-				<img src="Koala.jpg" alt="gấu Koala">
+					<img src="Koala.jpg" alt="gấu Koala">
 
-				<h3>Giá: 1,000,000 VNĐ</h3>
+					<h4>Giá: 1,000,000 VNĐ</h4>
 
-				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
  Mua</button>
 
-			</div>
+				</div>
 
-			<div class="product">
+				<div class="product">
 
-				<h2>Tên sản phẩm</h2>
+					<h2>Tên sản phẩm</h2>
 
-				<img src="Koala.jpg" alt="gấu Koala">
+					<img src="Koala.jpg" alt="gấu Koala">
 
-				<h3>Giá: 1,000,000 VNĐ</h3>
+					<h4>Giá: 1,000,000 VNĐ</h4>
 
-				<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<button type="button" class="btn btn-primary" name="mua"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
  Mua</button>
+
+				</div>
 
 			</div>
 
@@ -312,10 +200,60 @@
 
 		<!--<div id="right"> </div>-->
 
-		<div id="footer">© Onlinesales. All rights reserved 2017.<br>Written and coded by phdang</div>
+		<div id="footer">
 
+			<div>© <span id="WorldOfDang">WorldOfDang</span> All rights reserved 2017</div>
 
+			<div>Written and coded by phdang</div>
 
+		</div>
+
+	</div>
+
+	<!-- Modal Register Form -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Đăng Kí</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Email:</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="email" placeholder="Nhập email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Password:</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="pwd" placeholder="Nhập password">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">
+									<label><input type="checkbox"> Ghi nhớ</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-default">Đăng kí</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 </body>

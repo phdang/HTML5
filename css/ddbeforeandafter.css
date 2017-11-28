@@ -6,7 +6,7 @@ div.beforeandafter{ /* main container */
 	 /* default height of main container */
 	overflow: hidden;
 	position: relative;
-	width: 650px; /* default width of main container */
+	width: 40%; /* default width of main container */
 }
 
 div.beforeandafter img{

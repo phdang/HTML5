@@ -71,7 +71,7 @@ nav {
   height: 62px;
   position: sticky;
   top: 0px;
-  z-index: 99px;
+  z-index: 99;
 }
 
 .navbar-brand {
@@ -220,7 +220,7 @@ float:left;
 @media screen and (max-width: 900px) {
   .navbar a {
 
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 

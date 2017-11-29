@@ -28,37 +28,40 @@
 
 			// $("#button-bars").on("click",function(){
       //
-			// 	$("#myNavbar").show();
+			// 	$('#button-bars').mouseenter(function(){
+      //
+			// 		$("#myNavbar").css("z-index","199");
+			// 		$("#myNavbar,#button-bars").attr("disabled","disabled");
+      //
+      //
+      //
+			// 	});
+      //
+			// 	$('#button-bars').off("mouseenter");
+      //
+      //
 			// });
 
+        //
+				// $("#myNavbar").css("z-index","199");
+        
 			$("#catagory").on("click",function(){
-
-					// $("#myNavbar").show();
 
 					$("#button-bars").click();
 
 					$("#myNavbar").css("z-index","199");
 
 					$("#myNavbar,#button-bars").attr("disabled","disabled");
-
-
-
-
-
-
 			});
-
-
 			$("#myNavbar").on("mouseleave",function(){
 
-						console.log("leave");
-						$(".product,.fjords,#main").on("click",function(){
+						//console.log("leave");
+						$(".product,.fjords,#main,#header").on("click",function(){
 							$("#myNavbar,#button-bars").removeAttr("disabled","disabled");
 							// console.log("Click");
 							$("#button-bars").click();
 							$(".product,.fjords,#main").off("click");
-						})
-
+						});
 		});
 	})
 	</script>

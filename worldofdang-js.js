@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
   var heightOfContainer = $('body').width();
-  console.log(heightOfContainer);
+  //console.log(heightOfContainer);
 
   $('div img').mouseenter(function() {
 

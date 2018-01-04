@@ -27,36 +27,33 @@
 		})
 	</script>
 	<style>
+		div.drag {
 
-			div.drag {
+			width: 3px;
+		}
 
-				width: 3px;
-			}
+		div.drag div.draghandle {
 
-			div.drag div.draghandle {
+			display: none;
 
-				display: none;
+		}
 
-			}
-			.beforeandafter{
-
-				width:40%; /*width of container to body */
-			}
-
+		.beforeandafter {
+			width: 40%;
+			/*width of container to body */
+		}
 	</style>
 	<script src="jquery-3.2.1.min.js"></script>
 	<script>
+		$(document).ready(function() {
 
-	$(document).ready(function(){
+			const heightDiv = $('div.before > img ').outerHeight();
 
-		const heightDiv = $('div.before > img ').outerHeight();
+			console.log(heightDiv);
 
-		console.log(heightDiv);
-
-		$('div.beforeandafter').css('height',heightDiv);
-	})
-
-</script>
+			$('div.beforeandafter').css('height', heightDiv);
+		})
+	</script>
 
 </head>
 
@@ -70,24 +67,22 @@
 		</div>
 
 		<div class="after">
-			<img  id="la"width ="80%" src="la.jpg" />
+			<img id="la" width="80%" src="la.jpg" />
 			<span class="caption">AFTER</span>
 		</div>
 
 	</div>
 
 	<div style="width:550px; margin-top:1em">
-
 		<div style="overflow:hidden; margin-bottom:1em">
-			<a href="#" onClick="bafinstance.unveil('100%'); return false" style="float:right">Show "after" image fully</a> <a href="#" onClick="bafinstance.unveil('0%'); return false">Show "before" image fully</a>
+			<a href="#" onClick="bafinstance.unveil('100%'); return false" style="float:right">Show "after" image fully</a>
+			<a href="#" onClick="bafinstance.unveil('0%'); return false">Show "before" image fully</a>
 		</div>
 
 		<div style="overflow:hidden; margin-bottom:1em">
-			<a href="#" onClick="bafinstance.unveil('70%'); return false" style="float:right">Show "after" image
-70%</a> <a href="#" onClick="bafinstance.unveil('20%'); return false">Show "after" image
-20%</a>
+			<a href="#" onClick="bafinstance.unveil('70%'); return false" style="float:right">Show "after" imag70%</a>
+			<a href="#" onClick="bafinstance.unveil('20%'); return false">Show "after" image20%</a>
 		</div>
-
 	</div>
 </body>
 

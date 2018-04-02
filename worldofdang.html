@@ -26,25 +26,6 @@
 
 			$("#header").addClass("animated bounce");
 
-			// $("#button-bars").on("click",function(){
-			//
-			// 	$('#button-bars').mouseenter(function(){
-			//
-			// 		$("#myNavbar").css("z-index","199");
-			// 		$("#myNavbar,#button-bars").attr("disabled","disabled");
-			//
-			//
-			//
-			// 	});
-			//
-			// 	$('#button-bars').off("mouseenter");
-			//
-			//
-			// });
-
-			//
-			// $("#myNavbar").css("z-index","199");
-
 			$("#catagory").on("click", function() {
 
 				$("#button-bars").click();
@@ -62,6 +43,11 @@
 					$("#button-bars").click();
 					$(".product,.fjords,#main").off("click");
 				});
+			});
+			$('#login').click(function() {
+				//var body = $("html, body");
+				$("html, body").animate({scrollTop:400});
+				return false;
 			});
 		})
 	</script>
@@ -102,7 +88,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li data-toggle="modal" data-target="#myModal"><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+					<li><a href="#" id="login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
 				</ul>
 			</div>
 		</div>

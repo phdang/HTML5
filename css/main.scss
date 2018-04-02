@@ -1,0 +1,39 @@
+$body-color: #ff69b4;
+
+body {
+  color: $body-color;
+  font: 20px Helvetica, sans-serif;
+  padding: 150px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.message-from-webdev {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 650px;
+}
+
+@import 'panel';
+
+$ppl: (usr1: bob, usr2: john, usr3: bill, usr4: mike);
+
+@each $k, $v in $ppl {
+  ##{$k}-avatar {
+    background-image: url('images/#{$v}.png');
+  }
+}
+
+$x: 0;
+
+@while ($x < 13) {
+  .col-#{++$x} {
+    width: 100% / 12 * $x;
+  }
+
+  $x: $x + 1;
+}

@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
   $('div img').mouseenter(function() {
 
     heightOfContainer = $('body').width();
-    console.log(heightOfContainer);
+    //console.log(heightOfContainer);
 
     imageZoomEffect(heightOfContainer);
 
